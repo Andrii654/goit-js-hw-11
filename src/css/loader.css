@@ -1,0 +1,29 @@
+/* "circle01" loader from github.com/vineethtrv/css-loader */
+.loader {
+  --color-1: #e0e6ff;
+  --color-2: #4e75ff;
+  --size: 1px;
+
+  display: none;
+  width: calc(48 * var(--size));
+  height: calc(48 * var(--size));
+  margin: 24px auto;
+  border: calc(5 * var(--size)) solid var(--color-1);
+  border-bottom-color: var(--color-2);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader.is-active {
+  display: block;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

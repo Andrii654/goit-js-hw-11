@@ -1,0 +1,24 @@
+:root {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.iziToast-icon {
+  filter: brightness(0) invert(1);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
